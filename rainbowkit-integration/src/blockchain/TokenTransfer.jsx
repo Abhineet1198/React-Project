@@ -65,9 +65,7 @@ export default function TokenTransfer() {
 
       const amount = Number(form.amount);
 
-      // =========================
       // Check BNB Balance
-      // =========================
       if (form.token === "BNB") {
         const balance = Number(bnbBalance?.formatted ?? 0);
 
@@ -84,9 +82,7 @@ export default function TokenTransfer() {
         alert(`Success\nTx Hash:\n${hash}`);
       }
 
-      // =========================
       // Check USDT Balance
-      // =========================
       else {
         const balance = Number(
           formatUnits(usdtBalance ?? 0n, TOKENS.USDT.decimals),

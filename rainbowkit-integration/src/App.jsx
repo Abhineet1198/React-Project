@@ -19,7 +19,7 @@ const App = () => {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider modalSize="compact" theme={darkTheme()}>
+        <RainbowKitProvider modalSize="compact" coolMode theme={darkTheme()}>
           <WalletButton />
           <TokenTransfer />
         </RainbowKitProvider>
